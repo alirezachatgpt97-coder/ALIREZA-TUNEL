@@ -8,7 +8,11 @@ ZIP اصلی را استخراج کنید. فایل‌های داخلش را د�
 
 https://github.com/alirezachatgpt97-coder/ALIREZA-TUNEL
 
-`ALIREZATUNEL-SOURCE.zip` را استخراج نکنید. پوشهٔ `.github/workflows/build.yml` باید **با همین مسیر** در مخزن باشد. اگر آپلود مرورگر پوشهٔ `.github` را نمایش نمی‌دهد، از Add file → Create new file، نام `.github/workflows/build.yml` را وارد و متن فایل را در آن کپی کنید.
+ZIP اصلی را روی ویندوز Extract All کنید. داخل پوشهٔ استخراج‌شده بروید و با Ctrl+A تمام فایل‌ها **و پوشهٔ `.github`** را انتخاب کنید. در گیت‌هاب Add file → Upload files را باز کنید و همهٔ موارد انتخاب‌شده را با ماوس داخل صفحه بکشید؛ سپس Commit changes را بزنید.
+
+از دکمهٔ انتخاب فایل برای آپلود پوشه استفاده نکنید؛ پوشهٔ `.github` هم باید همراه فایل‌ها Drag & Drop شود. خود ZIP اصلی را در مخزن آپلود نکنید و ZIP داخلی `ALIREZATUNEL-SOURCE.zip` را هم استخراج نکنید.
+
+پس از آپلود باید در صفحهٔ اصلی مخزن پوشهٔ `.github` را ببینید و داخلش مسیر `workflows/build.yml` موجود باشد. ساخت دستی هیچ فایل لازم نیست. باقی فایل‌های ریشه: `ALIREZATUNEL-SOURCE.zip`، `SOURCE.sha256`، `bootstrap.sh`، `install.sh`، `README.md`، `BUILD-NOTES.md` و `SHA256SUMS`.
 
 پس از آپلود، در **Actions → Build ALIREZATUNEL** ساخت خودکار شروع می‌شود. اگر Actions غیرفعال بود، آن را فعال و Run workflow را بزنید. صبر کنید هر دو معماری و مرحلهٔ Publish سبز شوند؛ باینری‌های تازه در Releases قرار می‌گیرند. این مرحله فقط روی گیت‌هاب انجام می‌شود؛ نصب VPS هیچ Rust یا Go کامپایل نمی‌کند.
 
